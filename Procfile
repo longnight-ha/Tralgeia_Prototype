@@ -1,0 +1,1 @@
+web: gunicorn tralgeia.wsgi --log-file -

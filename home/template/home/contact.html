@@ -1,0 +1,51 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Services{% endblock title %}
+
+
+{% block content %}
+
+{% if status %}
+
+
+      {% if status == 'success' %}
+            <div class="alert alert-success">
+              <strong>Success!</strong> <h3>ส่งข้อความเรียบร้อยแล้ว โปรดรอทีมงานติดต่อกลับ</h3>
+            </div>
+            
+      {% else %}
+            <div class="alert alert-warning">
+              <strong>Warning!</strong><h3>กรุณากรอกข้อมูลให้ครบถ้วนทุกช่อง</h3>
+            </div>
+
+            
+      {% endif %}
+
+{% endif %}
+<div class="container">
+     
+    <form method="POST">
+      {% csrf_token %}  
+          <div class="form-group">
+              <label for="title">หัวข้อสอบถาม</label>
+              <input class="form-control" type="text" name="title" id="title">
+          </div>
+          <div class="form-group">
+              <label for="email">อีเมลล์</label>
+              <input class="form-control" type="text"  name="email" id="email">
+          </div>
+          <div class="form-group">
+              <label for="detail">รายละเอียด</label>
+              <textarea class="form-control" rows="5" id="detail" name="detail"></textarea>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+
+          
+    </form>
+    </div>
+{% endblock content %}
+
+
+

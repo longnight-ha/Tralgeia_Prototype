@@ -1,0 +1,59 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Services{% endblock title %}
+
+
+{% block content %}
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">ฟรี</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/เดือน</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>ตอบคำถามเกี่ยวกับบริการ</li>
+              <li>ปรึกษาปัญหาต่างๆ</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">สนใจคลิก</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">สมาชิก</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">100 บาท<small class="text-muted fw-light">/เดือน</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>สมัครสมาชิกเพื่อสร้างระบบลงทุนโซลาร์เซลล์</li>
+              <li>บริการตอบคำถาม</li>
+              <li>รีโมทการแก้ปัญหา</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">สมัคร</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">ไม่จำกัด</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">1000 บาท<small class="text-muted fw-light">/เดือน</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>ตรวจสอบแก้ไขปัญหาได้ทันที</li>
+              <li>ติดต่อพาร์ทเนอร์ด้วยตัวเอง</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
+
+
+
